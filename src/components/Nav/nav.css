@@ -1,0 +1,20 @@
+.header {
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    color: var(--colors-teal-500, #1d9089);
+    font-family: "Poppins", -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+.menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
