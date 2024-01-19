@@ -1,4 +1,4 @@
-.iconsCarrotSmall {
+.footer-icon {
     position: absolute;
     top: 231px;
     left: 748px;
@@ -6,7 +6,7 @@
     height: 12px;
     object-fit: contain;
 }
-.wereAGlobal {
+.footer-description {
     position: absolute;
     top: 154px;
     left: 192px;
@@ -16,14 +16,14 @@
     display: inline-block;
     width: 403px;
 }
-.aisafetycom {
+.footer-logo {
     margin-block-start: 0;
     margin-block-end: 8px;
 }
-.alignmentEcosystemDevelopmen {
+.footer-ecosystem {
     margin: 0;
 }
-.aisafetycomAlignmentEcosystContainer {
+.footer-box {
     position: absolute;
     height: 14.16%;
     width: 19.44%;
@@ -33,7 +33,7 @@
     line-height: 170%;
     display: inline-block;
 }
-.wereLookingFor {
+.footer-volunteers {
     position: absolute;
     height: 12.33%;
     width: 15%;
@@ -43,7 +43,7 @@
     line-height: 170%;
     display: inline-block;
 }
-.reachOut {
+.footer-reachout {
     position: absolute;
     height: 6.16%;
     width: 5.63%;
@@ -55,7 +55,7 @@
     color: #1d9089;
     display: inline-block;
 }
-.partnerProjects {
+.footer-partners {
     position: absolute;
     top: 111px;
     left: 939px;
@@ -63,7 +63,7 @@
     line-height: 170%;
     font-weight: 600;
 }
-.helpOut {
+.footer-help {
     position: absolute;
     top: 111px;
     left: 659px;
@@ -86,7 +86,7 @@
     text-align: center;
     width: 100%;
 }
-.aisafetyinfo {
+.footer-brand {
     position: absolute;
     top: 104px;
     left: 192px;
@@ -96,7 +96,7 @@
     font-weight: 600;
     color: #1d9089;
 }
-.line {
+.footer-line {
     position: absolute;
     top: -0.5px;
     left: -0.5px;
@@ -105,12 +105,12 @@
     width: 1441px;
     height: 1px;
 }
-.small {
+.footer-small {
     position: relative;
     letter-spacing: -0.01em;
     line-height: 170%;
 }
-.stylesecondaryColortealS {
+.footer-learnMore {
     position: absolute;
     top: 270px;
     left: 192px;

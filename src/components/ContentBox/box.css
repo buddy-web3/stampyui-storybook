@@ -23,24 +23,6 @@ body {
     height: 348px;
 }
 
-/*.rectangle {*/
-/*    position: absolute;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    border-radius: 6px;*/
-/*    background-color: #1a817c;*/
-/*    box-shadow: 0px 16px 40px rgba(175, 183, 194, 0.2);*/
-/*    width: 100%; !* Use percentage-based width *!*/
-/*    max-width: 1056px; !* Set a maximum width *!*/
-/*    height: 348px;*/
-/*}*/
-
-/*!* Media query for smaller screens *!*/
-/*@media only screen and (max-width: 768px) {*/
-/*    .rectangle {*/
-/*        height: 200px; !* Adjust height for smaller screens *!*/
-/*    }*/
-/*}*/
 .maskGroupIcon {
     position: absolute;
     top: 0px;

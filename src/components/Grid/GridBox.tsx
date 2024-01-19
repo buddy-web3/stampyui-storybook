@@ -28,9 +28,9 @@ export const GridBox:FunctionComponent = ({title,description,icon,url}:GridBoxPr
     }, [url]);
 
     return (
-        <div className={"group"} onClick={onGroupContainerClick}>
+        <div className={"grid-container-group"} onClick={onGroupContainerClick}>
             <div className={"cardBg"}>
-                <div className={"rectangle"} />
+                <div className={"grid-rectangle"} />
             </div>
             <div className={"grid-title"}>{title}</div>
             <div className={"grid-description"}>{description}</div>

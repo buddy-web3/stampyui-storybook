@@ -2,7 +2,7 @@
 body {
     margin: 0; line-height: normal;
 }
-.rectangle {
+.grid-rectangle {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -51,7 +51,7 @@ body {
     width: 72px;
     height: 72px;
 }
-.group {
+.grid-container-group {
     position: relative;
     /*width: 100%;*/
     height: 361px;
