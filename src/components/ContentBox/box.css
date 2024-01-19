@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+body {
+    margin: 0; line-height: normal;
+}
+
+.group {
+    /*position: relative;*/
+    width: 100%;
+    /*height: 348px;*/
+    text-align: left;
+    font-size: 38px;
+    color: #fff;
+    font-family: Poppins;
+}
+.rectangle {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 6px;
+    background-color: #1a817c;
+    box-shadow: 0px 16px 40px rgba(175, 183, 194, 0.2);
+    width: 1056px;
+    height: 348px;
+}
+
+/*.rectangle {*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    border-radius: 6px;*/
+/*    background-color: #1a817c;*/
+/*    box-shadow: 0px 16px 40px rgba(175, 183, 194, 0.2);*/
+/*    width: 100%; !* Use percentage-based width *!*/
+/*    max-width: 1056px; !* Set a maximum width *!*/
+/*    height: 348px;*/
+/*}*/
+
+/*!* Media query for smaller screens *!*/
+/*@media only screen and (max-width: 768px) {*/
+/*    .rectangle {*/
+/*        height: 200px; !* Adjust height for smaller screens *!*/
+/*    }*/
+/*}*/
+.maskGroupIcon {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1056px;
+    height: 348px;
+}
+.newToAi {
+    margin: 0px;
+}
+.somethingAboutReading {
+    margin: 0;
+    color: #a6d9d7;
+}
+.newToAiContainer {
+    position: absolute;
+    top: 56px;
+    left: 57px;
+    letter-spacing: -0.01em;
+    line-height: 130%;
+    font-weight: 600;
+    display: inline-block;
+    width: 439px;
+}
+.small {
+    position: relative;
+    letter-spacing: -0.01em;
+    line-height: 170%;
+    font-weight: 600;
+    text-wrap: nowrap;
+}
+.iconsArrowRight {
+    position: relative;
+    width: 16px;
+    height: 16px;
+}
+.button {
+    position: absolute;
+    top: 235px;
+    left: 57px;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0px 16px 40px rgba(32, 44, 89, 0.05);
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 21px;
+    box-sizing: border-box;
+    gap: 4px;
+    text-align: center;
+    font-size: 18px;
+    color: #1d9089;
+}
+
