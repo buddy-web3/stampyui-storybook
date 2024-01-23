@@ -40,7 +40,7 @@ body {
     letter-spacing: -0.02em;
     line-height: 150%;
     font-weight: 600;
-    color: #1b2b3e;
+    color: var(--text-black, #1B2B3E);
     display: inline-block;
     width: 214px;
 }

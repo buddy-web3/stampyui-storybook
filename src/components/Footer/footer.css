@@ -7,14 +7,15 @@
     object-fit: contain;
 }
 .footer-description {
-    position: absolute;
+    /*position: absolute;*/
     top: 154px;
     left: 192px;
     font-size: 18px;
     letter-spacing: -0.01em;
     line-height: 170%;
     display: inline-block;
-    width: 403px;
+    max-width: 403px;
+    margin-bottom: 23px;
 }
 .footer-logo {
     margin-block-start: 0;
@@ -34,9 +35,9 @@
     display: inline-block;
 }
 .footer-volunteers {
-    position: absolute;
+    /*position: absolute;*/
     height: 12.33%;
-    width: 15%;
+    /*width: 15%;*/
     top: 35.16%;
     left: 45.76%;
     letter-spacing: -0.01em;
@@ -44,19 +45,16 @@
     display: inline-block;
 }
 .footer-reachout {
-    position: absolute;
     height: 6.16%;
-    width: 5.63%;
-    top: 51.14%;
-    left: 45.76%;
     letter-spacing: -0.01em;
     line-height: 170%;
     font-weight: 600;
-    color: #1d9089;
-    display: inline-block;
+    color: var(--colors-teal-500, #1d9089);
+    display: flex;
+    gap: 14px;
 }
 .footer-partners {
-    position: absolute;
+    /*position: absolute;*/
     top: 111px;
     left: 939px;
     letter-spacing: -0.01em;
@@ -64,7 +62,7 @@
     font-weight: 600;
 }
 .footer-help {
-    position: absolute;
+    /*position: absolute;*/
     top: 111px;
     left: 659px;
     letter-spacing: -0.01em;
@@ -73,8 +71,8 @@
 }
 .footer-copyright {
     position: absolute;
-    height: 5.48%;
-    top: 90.87%;
+    /*height: 5.48%;*/
+    /*top: 90.87%;*/
     /* left: calc(50% - 187px); */
     font-size: 14px;
     letter-spacing: -0.01em;
@@ -87,14 +85,14 @@
     width: 100%;
 }
 .footer-brand {
-    position: absolute;
+    /*position: absolute;*/
     top: 104px;
     left: 192px;
     font-size: 22px;
     letter-spacing: -0.02em;
     line-height: 155%;
     font-weight: 600;
-    color: #1d9089;
+    color: var(--colors-teal-500, #1d9089);
 }
 .footer-line {
     position: absolute;
@@ -111,7 +109,7 @@
     line-height: 170%;
 }
 .footer-learnMore {
-    position: absolute;
+    /*position: absolute;*/
     top: 270px;
     left: 192px;
     border-radius: 6px;
@@ -126,6 +124,8 @@
     justify-content: center;
     padding: 7px 17px;
     color: #788492;
+    width: fit-content;
+
 }
 .footer {
     position: relative;
@@ -133,7 +133,13 @@
     height: 438px;
     text-align: left;
     font-size: 16px;
-    color: #1b2b3e;
+    color: var(--text-black, #1B2B3E);
     font-family: Poppins;
 }
-
+.footer-grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
