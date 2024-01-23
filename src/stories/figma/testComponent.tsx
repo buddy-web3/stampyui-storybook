@@ -1,6 +1,3 @@
-export const MyComponent=()=>{
-    return(
-        <>
-        </>
-    )
-}
+export const MyComponent = () => {
+  return <></>;
+};
