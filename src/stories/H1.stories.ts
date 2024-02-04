@@ -1,7 +1,7 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { H1 } from "../components/Topography/H1";
+import { H1 } from "../components/Typography/H1";
 const meta = {
-  title: "Components/Topography/H1",
+  title: "Components/Typography/H1",
   component: H1,
   parameters: {
     layout: "centered",

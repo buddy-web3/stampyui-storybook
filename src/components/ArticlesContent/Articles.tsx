@@ -1,6 +1,6 @@
 import React from "react";
-import { H1 } from "../Topography/H1";
-import { Paragraph } from "../Topography/Paragraph";
+import { H1 } from "../Typography/H1";
+import { Paragraph } from "../Typography/Paragraph";
 import { CopyIcon } from "../../assets/Copy.tsx";
 import { Tag } from "../Tags/Tag";
 import "./articles.css";
