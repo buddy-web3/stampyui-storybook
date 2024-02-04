@@ -59,7 +59,7 @@ body {
   cursor: pointer;
   text-align: left;
   font-size: 18px;
-  color: #788492;
+  color: var(--colors-cool-grey-600, #788492);
   font-family: Poppins;
   margin: 32.5px 32px;
 }

@@ -1,30 +1,116 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./nav.css";
 import { MenuItem } from "../Menu/MenuItem";
-export const NavBar = () => {
+import { OpenBookIcon } from "../../assets/OpenBook.tsx";
+import { ChatBoxIcon } from "../../assets/ChatBox.tsx";
+import { AISafetyIcon } from "../../assets/AISafety.tsx";
+import { MagnifyingIcon } from "../../assets/Magnifying.tsx";
+import { ArticlesDropdown } from "../ArticlesDropdown/Dropdown";
+
+const IntroductorySections = {
+  "Introduction to AI Safety": "/introduction-to-ai-safety",
+  "Frequent questions guide": "/frequent-questions-guide",
+  "Get involved with AI Safety": "/get-involved-with-ai-safety",
+};
+const AdvancedSections = {
+  Governance: "/governance",
+  "Predictions on advanced AI": "/predictions-on-advanced-ai",
+  "Technical alignment research categories":
+    "/technical-alignment-research-categories",
+  "Existential risk concepts": "/existential-risk-concepts",
+  "Prominent research organizations": "/prominent-research-organizations",
+};
+const BrowseByCategory = {
+  Definitions: "/definitions",
+  Objections: "/objections",
+  Superintelligence: "/superintelligence",
+  Contributing: "/contributing",
+  "Existential risk": "/existential-risk",
+  Catastrophe: "/catastrophe",
+  "Research agendas": "/research-agendas",
+  Governance: "/governance",
+  Resources: "/resources",
+  Capabilities: "/capabilities",
+  "Machine learning": "/machine-learning",
+  AGI: "/agi",
+};
+const BrowseAllCategories = "/browse-all-categories";
+
+export interface NavBarProps {
+  /**
+   * Introductory sections
+   */
+  IntroductorySections: Record<string, string>;
+  /**
+   * Advanced sections
+   */
+  AdvancedSections: Record<string, string>;
+  /**
+   * Browse by category
+   */
+  BrowseByCategory: Record<string, string>;
+  /**
+   * Browse all categories
+   */
+  BrowseAllCategories: string;
+}
+export const NavBar = ({
+  IntroductorySections,
+  AdvancedSections,
+  BrowseByCategory,
+  BrowseAllCategories,
+}: NavBarProps) => {
+  const [isSticky, setSticky] = React.useState(false);
+  const MouseEnter = () => {
+    setSticky(true);
+  };
+  const MouseLeave = () => {
+    setSticky(false);
+  };
+
   return (
-    <header className="header">
-      <nav className="nav">
-        <h1 className="logo">AIsafety.info</h1>
-        <ul className="menu">
+    <header className="top-header">
+      <nav className="top-nav">
+        <AISafetyIcon classname={"top-logo"} />
+        <ul className="top-menu">
           <MenuItem
             primary={true}
             link="#"
-            icon="https://cdn.builder.io/api/v1/image/assets/TEMP/4765be9befae32c2739bd2c9444b0372d57ef6754df9205de024cee21ce80f3b?apiKey=f1073757e44b4ccd8d59791af6c41a77&"
+            icon={<OpenBookIcon classname={"top-menu-icon"} />}
             text="Articles"
+            onMouseEnter={MouseEnter}
+          />
+          <ArticlesDropdown
+            isSticky={isSticky}
+            MouseEnter={MouseEnter}
+            MouseLeave={MouseLeave}
+            IntroductorySections={IntroductorySections}
+            AdvancedSections={AdvancedSections}
+            BrowseByCategory={BrowseByCategory}
+            BrowseAllCategories={BrowseAllCategories}
           />
           <MenuItem
             primary={true}
             link="#"
-            icon="https://cdn.builder.io/api/v1/image/assets/TEMP/3a6d92c1038a2e95b3f9371f120e22f78d20f757ed372832f0daa5df5d632a4b?apiKey=f1073757e44b4ccd8d59791af6c41a77&"
+            icon={<ChatBoxIcon classname={"top-menu-icon"} />}
             text="Stampy chatbot"
           />
-          <li className="menu-item">
-            <div className="menu-divider"></div>
+          <li className="top-menu-item">
+            <div className="top-menu-divider"></div>
           </li>
-          <MenuItem link="#" text="About us" />
-          <MenuItem link="#" text="Help out" />
         </ul>
+
+        <div style={{ flexGrow: 12 }}></div>
+        <div className={"search-box"}>
+          <div className={"search-inputChild"} />
+          <div className={"search-content"}>
+            <MagnifyingIcon classnamme={"iconsMagnifyingGlass"} />
+            <input
+              placeholder={"Search articles"}
+              className={"search-input"}
+            ></input>
+          </div>
+        </div>
       </nav>
     </header>
   );
