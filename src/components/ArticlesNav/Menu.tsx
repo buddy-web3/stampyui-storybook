@@ -22,82 +22,6 @@ interface ArticlesNavProps {
   onClick?: () => void;
 }
 
-const demoArticles = [
-  {
-    title: "Introduction to AI safety",
-    id: 0,
-    dropdown: [],
-    isHeader: true,
-  },
-  {
-    title: "Consciousness",
-    id: 1,
-    dropdown: [
-      {
-        title: "lorem",
-        id: 100,
-      },
-    ],
-  },
-  {
-    title: "Strategy",
-    id: 2,
-    dropdown: [
-      {
-        title: "ipsum",
-        id: 200,
-      },
-    ],
-  },
-  {
-    title: "Current solution attempts",
-    id: 3,
-    dropdown: [
-      {
-        title: "dolorem",
-        id: 400,
-      },
-    ],
-  },
-  {
-    title: "Technical misalignment",
-    id: 5,
-    dropdown: null,
-  },
-  {
-    title: "AGI capabilities",
-    id: 6,
-    dropdown: [],
-  },
-  {
-    title: "Types of risks",
-    id: 7,
-    dropdown: null,
-  },
-  {
-    title: "Timelines",
-    id: 8,
-    dropdown: [
-      {
-        title: "set",
-        id: 800,
-      },
-    ],
-  },
-  {
-    title: "Takeoff & intelligence explosion",
-    id: 9,
-  },
-  {
-    title: "Types of AI",
-    id: 10,
-  },
-  {
-    title: "Introduction to machine learning",
-    id: 11,
-  },
-];
-
 export const ArticlesNav = ({
   articles,
   active,
@@ -125,7 +49,7 @@ export const ArticlesNav = ({
 
   return (
     <div className={"articles-group"}>
-      {demoArticles.map((article) => {
+      {articles.map((article) => {
         if (article.isHeader) {
           return (
             <div

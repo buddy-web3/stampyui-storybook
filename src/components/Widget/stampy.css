@@ -31,7 +31,7 @@
   border-radius: 6px;
   background-color: #fff;
   box-shadow: 0px 16px 40px rgba(175, 183, 194, 0.2);
-  border: 1px solid #dfe3e9;
+  border: 1px solid var(--colors-cool-grey-200, #dfe3e9);
   box-sizing: border-box;
   letter-spacing: -0.01em;
   line-height: 170%;
@@ -114,7 +114,7 @@
   border-radius: 6px;
   background-color: #fff;
   box-shadow: 0px 16px 40px rgba(32, 44, 89, 0.05);
-  border: 1px solid #dfe3e9;
+  border: 1px solid var(--colors-cool-grey-200, #dfe3e9);
   box-sizing: border-box;
   height: 56px;
   display: flex;

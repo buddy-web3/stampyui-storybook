@@ -7,35 +7,6 @@ import { AISafetyIcon } from "../../assets/AISafety.tsx";
 import { MagnifyingIcon } from "../../assets/Magnifying.tsx";
 import { ArticlesDropdown } from "../ArticlesDropdown/Dropdown";
 
-const IntroductorySections = {
-  "Introduction to AI Safety": "/introduction-to-ai-safety",
-  "Frequent questions guide": "/frequent-questions-guide",
-  "Get involved with AI Safety": "/get-involved-with-ai-safety",
-};
-const AdvancedSections = {
-  Governance: "/governance",
-  "Predictions on advanced AI": "/predictions-on-advanced-ai",
-  "Technical alignment research categories":
-    "/technical-alignment-research-categories",
-  "Existential risk concepts": "/existential-risk-concepts",
-  "Prominent research organizations": "/prominent-research-organizations",
-};
-const BrowseByCategory = {
-  Definitions: "/definitions",
-  Objections: "/objections",
-  Superintelligence: "/superintelligence",
-  Contributing: "/contributing",
-  "Existential risk": "/existential-risk",
-  Catastrophe: "/catastrophe",
-  "Research agendas": "/research-agendas",
-  Governance: "/governance",
-  Resources: "/resources",
-  Capabilities: "/capabilities",
-  "Machine learning": "/machine-learning",
-  AGI: "/agi",
-};
-const BrowseAllCategories = "/browse-all-categories";
-
 export interface NavBarProps {
   /**
    * Introductory sections

@@ -18,17 +18,10 @@ export const Footer: FunctionComponent = () => {
 
         <div>
           <div className={"footer-help"}>Help out</div>
-          <div className={"footer-volunteers"}>
-            We’re looking for volunteers for lorem ipsum
-          </div>
-          <div className={"footer-reachout"}>
-            <span>Reach out </span>
-            <img
-              loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/411c7babc22fb468fbfb60b64c0fc6caf63c93f7b26f615934615e41c46e6c09?apiKey=f1073757e44b4ccd8d59791af6c41a77&"
-              className="img"
-            />
-          </div>
+          <div className={"footer-help-link"}>Donate</div>
+          <div className={"footer-help-link"}>Code</div>
+          <div className={"footer-help-link"}>Write</div>
+          <div className={"footer-help-link"}>Join us on Discord</div>
         </div>
         <div>
           <div className={"footer-partners"}>Partner projects</div>
