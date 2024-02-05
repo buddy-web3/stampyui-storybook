@@ -25,6 +25,9 @@
   padding: 32px;
   gap: 16px;
 }
+.search-result:hover {
+  background-color: var(--colors-teal-50, #edfaf9);
+}
 .search-result-image {
   min-width: 16px;
   min-height: 16px;
