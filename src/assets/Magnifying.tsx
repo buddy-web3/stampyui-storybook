@@ -1,6 +1,12 @@
-import React from "react";
 
-const Magnifying = ({ classnamme }) => {
+interface MagnifyingProps {
+    /**
+     * Classname
+     */
+    classnamme: string;
+}
+
+const Magnifying = ({ classnamme }:MagnifyingProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

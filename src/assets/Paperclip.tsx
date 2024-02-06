@@ -1,6 +1,11 @@
-import React from "react";
+interface PaperclipProps {
+    /**
+     * Classname
+     */
+    classname?: string;
+}
 
-const Paperclip = ({ classname }) => {
+const Paperclip = ({ classname }:PaperclipProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

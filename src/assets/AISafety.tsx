@@ -1,6 +1,11 @@
-import React from "react";
 
-const AISafety = ({ classname }) => {
+interface AISafetyProps {
+    /**
+     * Classname
+     */
+    classname?: string;
+}
+const AISafety = ({ classname }:AISafetyProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

@@ -1,6 +1,11 @@
-import React from "react";
 
-const EclipseIndividual = ({ classname }) => {
+interface EclipseIndividualProps {
+    /**
+     * Classname
+     */
+    classname: string;
+}
+const EclipseIndividual = ({ classname }:EclipseIndividualProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

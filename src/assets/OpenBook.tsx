@@ -1,6 +1,11 @@
-import React from "react";
 
-const OpenBook = ({ classname }) => {
+interface OpenBookProps {
+    /**
+     * Classname for the icon
+     */
+    classname: string;
+}
+const OpenBook = ({ classname }:OpenBookProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

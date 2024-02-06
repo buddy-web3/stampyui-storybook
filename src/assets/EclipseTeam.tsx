@@ -1,6 +1,11 @@
-import React from "react";
 
-const EclipseTeam = ({ classname }) => {
+interface EclipseTeamProps {
+    /**
+     * Classname
+     */
+    classname: string;
+}
+const EclipseTeam = ({ classname }:EclipseTeamProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

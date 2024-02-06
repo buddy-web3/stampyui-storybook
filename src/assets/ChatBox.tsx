@@ -1,6 +1,11 @@
-import React from "react";
 
-const ChatBox = ({ classname }) => {
+interface ChatBoxProps {
+    /**
+     * Classname for the chat box
+     */
+    classname: string;
+}
+const ChatBox = ({ classname }:ChatBoxProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
